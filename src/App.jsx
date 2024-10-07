@@ -19,19 +19,19 @@ import { RequestAirdrop } from "./RequestAirDrop";
 
 function App() {
   return (
+    // connnection to rpc
     <ConnectionProvider endpoint={"https://api.devnet.solana.com"}>
       <WalletProvider wallets={[]} autoConnect>
         <WalletModalProvider>
           <div
             style={{
-              // width: "100vw",
               display: "flex",
               justifyContent: "center",
             }}
           >
             <WalletMultiButton />
-            <RequestAirdrop />
           </div>
+          <RequestAirdrop />
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
