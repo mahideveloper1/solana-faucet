@@ -12,11 +12,11 @@ import {
 import { clusterApiUrl } from "@solana/web3.js";
 
 import "@solana/wallet-adapter-react-ui/styles.css";
-// import { SendTokens } from "./SendTokens";
 // import { SignMessage } from "./SignMessage";
 import "./App.css";
 import { RequestAirdrop } from "./RequestAirDrop";
 import { ShowSolBalance } from "./ShowBalance";
+import { SendTokens } from "./SendTokens";
 
 function App() {
   return (
@@ -32,8 +32,9 @@ function App() {
           >
             <WalletMultiButton />
           </div>
-          {/* <RequestAirdrop /> */}
-          <ShowSolBalance />
+          {/* <RequestAirdrop />
+          <ShowSolBalance /> */}
+          <SendTokens />
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>
